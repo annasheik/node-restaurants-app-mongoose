@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: Tay0cCAmHTxz7Vh9qT0XlT4mckcGMwZdFkacvyOAMQakmFyD1Sga8rZMCKsqm/2B7qbzWa+wn5rmbIcvIPWu0beN/yWNlhdq9xGBXRZqsrV/SyAiqjQP+KgQJ9qwOfaiFZaRoIXS8jkbuSp6M8feszT1rKT5KATX+lojDto2SZdptVq6BSoergzCrBRZI6HBeJ07PTcOOS/N+ynIEIs+23Io+01INu73iMVn1LxOiXCo+6n0YM51Y7L8o+D9bQJEsGNUnm6thywMhHCr7hA72rGyfeXCDFOV8e909ctZXiCDWXv4lycXn2vWP2RfEI7y7C22lAvK4KlbfNTV2NsW9E7L00zsRD7yQuzPaa9BsAhPSXyErKJPbv3FmSIkWJ6cWvcOUK0GP6LUhEH4Qox7bDam+AZ4elM5RhZTjTstruzENS7OgQMp+QnKbzN69pukq1keaazQi/EK0Iu5+81HiTjGxwjE8WsbpMilFLDrlb+D/Yju8oDQ+fuFnj9SgcG7gTuowp/XOgx4EFoFbKcNMNd2wuUS5evfL1ri7a4eLw/C8vb63b1/qD1lJ/JqE3iJqx0MNfqxrxQL55uxVYvYRbJp9VFk2LVkzgM7NzmA+miWLUIqdclDWald5eBZdmkOY9MyhkaB9snHkglkhz8WgrnmpdlzOqlo4AnKlCHp2uM=
+  app:  safe-scrubland-53972
+  on:
+    repo: annasheik/node-restaurants-app-mongoose
+    branch: feature/with-tests
